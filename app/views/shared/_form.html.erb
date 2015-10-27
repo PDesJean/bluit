@@ -1,0 +1,30 @@
+
+<% if form_post %>
+  <%= form_for post do |f| %>
+    <fieldset>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    </fieldset>
+
+    <fieldset>
+    <%= f.label :link %>
+    <%= f.text_field :link %>
+    </fieldset>
+
+    <%= f.submit class: "btn btn-default" %>
+  <% end %>
+<% else %>
+  <%= form_for category do |f| %>
+    <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    </fieldset>
+
+    <fieldset>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+    </fieldset>
+
+    <%= f.submit class: "btn btn-default" %>
+  <% end %>
+<% end %>

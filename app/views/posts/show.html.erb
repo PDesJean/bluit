@@ -1,6 +1,6 @@
 <article class="post">
   <div class="title">
     <%= link_to @post.title, @post.link %>
-    <%= render "details", post: @post, display_details: false %>
+    <%= render "shared/details", post: @post, display_details: false %>
   </div>
 </article>
