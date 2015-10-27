@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  before_action :find_category, only: [:show]
 
   def new
     @category = Category.new
@@ -19,5 +20,9 @@ class CategoriesController < ApplicationController
 
   def category_params
     params.require(:category).permit(:name, :description)
+  end
+
+  def find_category
+    @category = Category.find params[:id]
   end
 end
