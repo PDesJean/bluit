@@ -42,6 +42,17 @@ main form {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+#session_actions {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: #EFF7FF;
+  padding: 4px;
+  margin-bottom: 10px;
+  line-height: 12px;
+  border-top-left-radius: 7px;
+  font-size: x-small;
+}
 
 .row {
   margin-left: 0 !important;
