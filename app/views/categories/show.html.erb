@@ -3,15 +3,5 @@
   <div class="description">
     <%= @category.description %>
   </div>
-  <ul class="posts">
-    <% @category.posts.each do |post| %>
-      <li>
-        <div class="title">
-          <a href="<%= post.link %>" target="_blank"><%= post.title %></a>
-        </div>
-
-        <%= render "shared/details", post: post, display_details: true %>
-      </li>
-    <% end %>
-  </ul>
+  <%= render "shared/posts_list", posts: @posts, display_details: true %>
 </div>
